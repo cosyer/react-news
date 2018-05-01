@@ -40,7 +40,7 @@ class MobileHeader extends React.Component {
         };
         var formData = this.props.form.getFieldsValue();
 
-        fetch("http://newsapi.gugujiankong.com/Handler.ashx?" +
+        fetch("https://newsapi.gugujiankong.com/Handler.ashx?" +
             "action=" + this.state.action +
             "&username=" + formData.userName +
             "&password=" + formData.password +

@@ -17,7 +17,7 @@ class CommonComments extends React.Component {
         var myFetchOptions = {
             method: 'GET'
         };
-        fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getcomments&uniquekey=" +
+        fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getcomments&uniquekey=" +
             this.props.uniquekey, myFetchOptions)
             .then(response => response.json())
             .then(json => {
@@ -33,7 +33,7 @@ class CommonComments extends React.Component {
             method: 'GET'
         };
         var formdata = this.props.form.getFieldsValue();
-        fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=comment&" +
+        fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=comment&" +
             "userid=" + localStorage.userid +
             "&uniquekey=" + this.props.uniquekey +
             "&comment=" + formdata.remark, myFetchOptions)
@@ -48,7 +48,7 @@ class CommonComments extends React.Component {
             method : 'GET'
         };
         if(localStorage.userid){
-            fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=uc2&userid="+localStorage.userid+
+            fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=uc2&userid="+localStorage.userid+
                 "&uniquekey="+this.props.uniquekey+"&newstype="+this.props.newsType,myFetchOption)
                 .then(response => response.json())
                 .then(json =>{

@@ -23,7 +23,7 @@ export default class PCUserCenter extends React.Component {
             method : 'GET'
         }
 
-        fetch('http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=' + localStorage.userid,myFetchOption)
+        fetch('https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=' + localStorage.userid,myFetchOption)
             .then(response => response.json())
             .then(json=>{
 
@@ -32,7 +32,7 @@ export default class PCUserCenter extends React.Component {
                 })
             });
 
-        fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOption)
+        fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOption)
             .then(response => response.json())
             .then(json => {
                 this.setState({usercomments:json});
@@ -42,7 +42,7 @@ export default class PCUserCenter extends React.Component {
 
     render() {
         const props = {
-            action: 'http://newsapi.gugujiankong.com/handler.ashx',
+            action: 'https://newsapi.gugujiankong.com/handler.ashx',
             headers: {
                 "Access-Control-Allow-Origin": "*"
             },
