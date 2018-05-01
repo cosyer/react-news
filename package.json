@@ -1,5 +1,5 @@
 {
-  "name": "react-news-demo",
+  "name": "react-news",
   "version": "1.0.0",
   "description": "react-demo  可适配pc端移动端",
   "main": "root.js",
@@ -11,14 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/2016Messi/react-News-demo.git"
+    "url": "git+https://github.com/cosyer/react-news.git"
   },
-  "author": "wangyue",
+  "author": "cosyer",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/2016Messi/react-News-demo/issues"
-  },
-  "homepage": "https://github.com/2016Messi/react-News-demo#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
